@@ -19,7 +19,7 @@ public class MinusCalculatorTests {
 
     @DisplayName("20에서 10을 뺀 결과가 10인지 확인합니다.")
     @Test
-    public void testMinusTwoNumbers() {
+    public void testMinusTwoNumbers1() {
 
         // given
         int num1 = 20;
@@ -35,7 +35,7 @@ public class MinusCalculatorTests {
     }
     @DisplayName("40에서 20을 뺀 결과가 20인지 확인합니다.")
     @Test
-    public void testMinusTwonumbers() {
+    public void testMinusTwoNumbers2() {
 
         // given
         int num1 = 40;
