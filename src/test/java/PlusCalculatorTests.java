@@ -19,24 +19,9 @@ public class PlusCalculatorTests {
 
     // 검증 내용
     // 1. 더하기 기능을 잘 수행하는지 확인 (10, 20) => 30
-    @DisplayName("10과 20을 넣었을 때 30이라는 결과가 계산되는지 확인")
+    @DisplayName("20과 30을 넣었을 때 50이라는 결과가 계산되는지 확인")
     @Test
     public void testSumTwoNumbers() {
-
-        // given
-        int num1 = 10;
-        int num2 = 20;
-
-        // when
-        int result = plusCalc.sumTwoNumbers(num1, num2);
-
-        // then (verify)
-        Assertions.assertEquals(30, result);
-    }
-
-    @DisplayName("20과 30을 넣었을때 50이라는 결과가 계산되는지 확인")
-    @Test
-    public void testSumTwoNumbers2() {
 
         // given
         int num1 = 20;
@@ -45,8 +30,23 @@ public class PlusCalculatorTests {
         // when
         int result = plusCalc.sumTwoNumbers(num1, num2);
 
-        // then
+        // then (verify)
         Assertions.assertEquals(50, result);
+    }
+
+    @DisplayName("40과 20을 넣었을때 60이라는 결과가 계산되는지 확인")
+    @Test
+    public void testSumTwoNumbers2() {
+
+        // given
+        int num1 = 40;
+        int num2 = 20;
+
+        // when
+        int result = plusCalc.sumTwoNumbers(num1, num2);
+
+        // then
+        Assertions.assertEquals(60, result);
     }
 }
 
