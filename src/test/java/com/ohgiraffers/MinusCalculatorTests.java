@@ -2,12 +2,19 @@
 package com.ohgiraffers;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class MinusCalculatorTests {
 
-    //private MinusCalculator minusCalc;
+    private MinusCalculator minusCalc;
+
+    @BeforeEach
+    public void setUp() {
+        minusCalc = new MinusCalculator();
+
+    }
 
 
     @DisplayName("20에서 10을 뺀 결과가 10인지 확인합니다.")
@@ -19,7 +26,7 @@ public class MinusCalculatorTests {
         int num2 = 10;
 
         // when
-        MinusCalculator minusCalc = new MinusCalculator();
+        //MinusCalculator minusCalc = new MinusCalculator();
         int result = minusCalc.minusTwoNumbers(num1, num2);
 
         // then
@@ -35,7 +42,7 @@ public class MinusCalculatorTests {
         int num2 = 20;
 
         // when
-        MinusCalculator minusCalc = new MinusCalculator();
+        //MinusCalculator minusCalc = new MinusCalculator();
         int result = minusCalc.minusTwoNumbers(num1, num2);
 
         // then
